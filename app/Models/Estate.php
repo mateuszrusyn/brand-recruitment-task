@@ -5,12 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Estate extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'firstname',
-        'lastname',
+        'supervisor_user_id',
+        'street',
+        'building_number',
+        'city',
+        'zip'
     ];
 }
